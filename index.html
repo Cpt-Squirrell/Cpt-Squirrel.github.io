@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Canvas Style Elements -->
+        <style>
+            .canvas
+            {
+                position: absolute;
+                z-index: -1;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-color: #080808;
+            }
+            #canvas_container {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <title>Portfolio by and for Sir. Arctifox</title>
+    </head>
+    <body>
+        <!-- Canvas Container -->
+        <div id="canvas_container">
+            <canvas class="canvas noselect"></canvas>
+        </div>
+        <header id="top-bar" style="display: block;">
+            <div id="theme-selector" style="display: inline-block; width: 2em; height: 1em; background-color: black;"></div>
+        </header>
+        <main>
+            <section id="main">
+                <div style="font-family: monospace; padding: 5mm;">
+                    <img id="pfp" src="Casual Mink Transparent.png">
+                    <h2 style="font-size: xx-large;">
+                        Hello there; I am Philip!
+                    </h2>
+                    <h5 style="font-size: large;"> 
+                        <abbr>AKA</abbr> Sir. Arctifox<br><abbr>AKA</abbr> Cpt. Squirrel
+                    </h5>
+                    <h5>Internet Aliases</h5>
+                </div>
+                <h5>
+                    A novice programmer amongst other things from Sweden. Welcome to my portfolio.
+                </h5>
+                <p>
+                    Here I host a few of my projects, mostly those that are worth actually taking a look at.
+                    I'm a handy person who likes to tinker with both theoretical and practical problems and
+                    programming is just one out of many hobbies. When it comes to programming I like to work
+                    close to the machine which is why my preferred language is C++. I've obviously worked with
+                    C++ the most but I started my programming journey with Lua when I was just a kid.
+                    I have tried many languages, even the obscure and forsaken Arma 3 in-game scripting language
+                    'SQF' (Status Quo Function). God have mercy on your soul if you've used it before. And then
+                    of course I have worked with HTML, CSS, and JavaScript to create this wonderful portfolio.
+                    In other web-dev courses I have also worked with databases complete with PHP and SQL.
+                    In an earlier school I also got somewhat familiar with Microsoft Windows Server 2012 R2.
+                </p>
+                <p>
+                    Perhaps it might not be noticeable from a glance but the area in programming that interest
+                    me the most is probably 3D graphics. The background of this portfolio was made by me from
+                    scratch in JavaScript using canvas elements and render buffers. <noscript>Sadly, it would
+                    appear that the background failed to load.</noscript> It went through multiple
+                    iterations from random lines spanning the sides making a criss-cross pattern to now bubbles
+                    that interact with each other. Fun fact: there is actually a very small and obscure bug with
+                    the current implementation on how bubbles interact with each other. Can you spot it?
+                    On the topic of 3D graphics, a dream for me would be creating a Game Engine or Render Engine
+                    of some sorts; perhaps to pursue the goal of creating a video game?
+                </p>
+                <p>
+                    Other than programming I like to work with 3D art, especially hard-surface modelling,
+                    and I use Blender for all my 3D needs. I like practical work too however and 3D printing
+                    ties in well with the hobby of 3D modelling. I love dreaming about fixing up a car some day,
+                    or why not multiple cars! I really want to get into working with electronics such as Arduino's
+                    or Raspberry Pi's and creating smart systems. This ties well into my nerdiness with computers
+                    and programming. Worth mentioning as well is my pride in my writing excellence.
+                    <em>Punctuation, to be precise.</em> Even in SMS' or in-game text chats I will still be typing
+                    out my full stops and apostraphes when others would simply forgo any and all punctuation;
+                    it's muscle memory at this point.
+                </p>
+                <address id="links-container" style="margin-top: 1cm;">
+                    <h5>I know it's not much but you can find me here.</h5>
+                    <a href="https://github.com/Cpt-Squirrell"><img src="GitHub-Mark-Light-32px.png"/></a>
+                </address>
+            </section>
+            <section id="projects" >
+                <!-- Header for projects -->
+                <h2 style="font-family: monospace; font-size: xx-large; padding: 5mm;">
+                    Here are a few of my projects to check out:
+                </h2>
+                <!-- List of Projects -->
+                <div class="project">
+                    <div class="project-summary">
+                        <img class="project-icon" alt="Website Icon" src="website-icon.png"/>
+                        <div style="display: inline-block;"> <!-- Project summary text -->
+                            <h3>This Portfolio Site</h3>
+                            It was made by me for a school project.<br>
+                            It contains nearly everything I've made, of which I am proud of.
+                        </div>
+                    </div>
+                    <dd class="project-description">
+                        <p>
+                            This portfolio was originally made for a web-dev course and became well overdue.
+                            It features a tiny autobiography about myself and a few projects that I have
+                            worked on and are worthwhile sharing. It features seemingly well working responsive
+                            layout and a nice live background created from scratch in JavaScript and Canvas elements.
+                            There is not much to say about this Portfolio, it's really "what you see is what you get".
+                        </p>
+                        <p>
+                            Why not have a little peek at how the background is rendered?<br>
+                            <code style="white-space:pre;">
+    <span style="font-weight: bold;">function</span> <span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">updateCanvas</span>(<span></span>)
+    {
+        <span style="color: rgb(136, 136, 136);">//Remove the existing Canvas and replace it with new canvas</span>
+        <span style="font-weight: bold;">var</span> canvasContainer = <span style="color: rgb(188, 96, 96);">document</span>.<span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">getElementById</span>(<span style="color: rgb(136, 0, 0);">"canvas_container"</span>);
+        canvasContainer.<span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">removeChild</span>(<span style="color: rgb(188, 96, 96);">document</span>.<span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">getElementsByClassName</span>(<span style="color: rgb(136, 0, 0);">"canvas"</span>)[<span style="color: rgb(136, 0, 0);">0</span>]);
+        <span style="font-weight: bold;">var</span> canvas = <span style="color: rgb(188, 96, 96);">document</span>.<span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">createElement</span>(<span style="color: rgb(136, 0, 0);">"canvas"</span>);
+        canvas.<span>classList</span>.<span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">add</span>(<span style="color: rgb(136, 0, 0);">"canvas"</span>);
+        canvas.<span>width</span> = <span style="color: rgb(188, 96, 96);">window</span>.<span>innerWidth</span>;
+        canvas.<span>height</span> = <span style="color: rgb(188, 96, 96);">window</span>.<span>innerHeight</span>;
+        canvasContainer.<span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">appendChild</span>(canvas);   
+        <span style="color: rgb(136, 0, 0); font-weight: bold;color: rgb(136, 0, 0); font-weight: bold;">animate</span>();
+    }</code> <!-- Indentation is very wonky on purpose for code indentation purposes -->
+                        </p>
+                    </dd>
+                </div>
+                <div class="project">
+                    <div class="project-summary">
+                        <img class="project-icon" alt="Harddrive Icon" src="storage-icon.png"/>
+                        <a href="https://github.com/Cpt-Squirrell/backerup" style="color: inherit;">
+                            <div style="display: inline-block;"> <!-- Project summary text -->
+                                <h3>Backerup <u style="float: right;">Find on GitHub</u></h3>
+                                Backerup is my project for the finishing course during school.
+                                It's a very simple backup program which is designed to be easily
+                                accessed entirely through CLI.
+                            </div>
+                        </a>
+                    </div>
+                    <dd class="project-description">
+                        <p>
+                            In essence, Backerup is like most other back up utilities out there except
+                            due to time constrains I could not add all features I wanted. This project
+                            may or may not be revisited to be finalised at a later date. With that said,
+                            the program is entirely usable in its current state though safety of data can
+                            not be guarenteed. The program is written in C++ and uses the library TinyXML2
+                            for XML data handling and other than this library the project is all homebrewed
+                            code.
+                        </p>
+                        <p>
+                            The purpose of the project was to make up the bulk of my final assignment
+                            in school. I wrote an essay (in Swedish) together with the development of the
+                            program which detailed the purpose, design, theory, execution, and the
+                            final product. The work was examined and graded. But the idea of the project was
+                            not only for a school project. The original idea goes back a few years when
+                            I was simply brainstorming things to do. The idea of making a general purpose
+                            backup utility sprung in to mind which led to the first actual plannings of
+                            the project being written. After a short while the project was shelved only
+                            to be revitalized during the school project.
+                        </p>
+                        <p>
+                            Here's a screenshot of Backerup at work:<br>
+                            <img alt="Backerup at work" src="Backerup.png">
+                        </p>
+                    </dd>
+                </div>
+                <div class="project">
+                    <div class="project-summary">
+                        <img class="project-icon" alt="Harddrive Icon" src="storage-icon.png"/>
+                        <a href="https://github.com/Cpt-Squirrell/backerup" style="color: inherit;">
+                            <div style="display: inline-block;"> <!-- Project summary text -->
+                                <h3>Conway's Game of Life <u style="float: right;">Find on GitHub</u></h3>
+                                I made a Conway's Game of Life in C# during a programming course.
+                                It broke a few times and currently there does not exist a fully functional version.
+                            </div>
+                        </a>
+                    </div>
+                    <dd class="project-description">
+                        <p>
+                            My Conways Game of Life was made in C# during my second year in Gymnasium in a
+                            programming course and <em>it once upon a time did work</em> but due to devilish optimisation
+                            I accidentally broke the program right before hand-in. It has been broken ever since but I will
+                            eventually return to the project and finish the optimised version, or so it the plan anyways.
+                            The linked GitHub page is the "Reborn" version - that would be the most up to date version -
+                            but the original is still up and public on my GitHub profile.
+                        </p>
+                        <p>
+                            Whilst I do not have any working executable showing a working Conways game, I do have
+                            a few backed up executables from the development showing a few really cool looking
+                            patterns produced by various bugs (that were eventually ironed out). Here are a few of
+                            them in GIF form:
+                            <table>
+                                <tr>
+                                    <td><img src="Conway_50ms.gif" style="max-block-size: 10em;"></td>
+                                    <td><img src="Conway_100ms.gif" style="max-block-size: 10em;"></td>
+                                    <td><img src="Conway_Maze.gif" style="max-block-size: 10em;"></td>
+                                </tr>
+                            </table>
+                        </p>
+                        <p>
+                            The program was made in MonoGame and, even though I had no prior experience
+                            with MonoGame or the alikes, the development process was surprisingly very straightforward.
+                        </p>
+                    </dd>
+                </div>
+            </section>
+        </main>
+        <footer id="bottom-bar" style="position: fixed; display: block; bottom: 0px; min-height: 2em;">
+        </footer>
+        <script src="canvas.js"></script>
+    </body>
+</html>

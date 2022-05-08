@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #F5E9E2;
+    color: white;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    padding: 5px;
+    height: min-content;
+    width: 100%;
+    max-width: 19cm;
+    margin: 20px 5% 50px;
+}
+
+#pfp {
+    float: left;
+    margin-right: 5mm;
+    max-block-size: 2cm;
+    border-radius: 100%;
+}
+
+#main > p {
+    margin-top: 10px;
+}
+
+#buffer-section {
+    align-self: baseline;
+    max-width: 25%;
+    min-width: 5%;
+}
+
+#projects {
+    padding: 5px;
+    width: 100%;
+    max-width: 19cm;
+    margin: 20px 5% 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#links-container *{
+    margin: 1mm
+}
+
+.project {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+    max-height: 80px;
+    transition: max-height 1s ease 0.1s;
+}
+
+.project:hover {
+    max-height: 100%;
+}
+
+.project-summary {
+    display: flex;
+    text-align: justify;
+    margin-bottom: 2.5mm;
+}
+
+.project-icon {
+    width: auto;
+    height: auto;
+    max-block-size: 5em;
+    margin-right: 3%;
+}
+
+.project-description {
+    padding: 3mm;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.project-description > p {
+    margin-top: 10px;
+}
+
+.project-title {
+    display: block;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                      supported by Chrome, Edge, Opera and Firefox */
+}
