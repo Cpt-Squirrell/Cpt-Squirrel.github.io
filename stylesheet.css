@@ -2,6 +2,10 @@
     margin: 0px;
 }
 
+header {
+    display: hidden;
+}
+
 body {
     background-color: #F5E9E2;
     color: white;
@@ -17,7 +21,7 @@ main {
     /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     background-color: rgba(0, 0, 0, 0.5);
     text-align: justify;
-    padding: 5px;
+    padding: 5mm;
     height: min-content;
     width: 100%;
     max-width: 19cm;
@@ -49,8 +53,10 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#links-container *{
-    margin: 1mm
+#links-container a img{
+    margin: 2mm;
+    width: 32px;
+    height: 32px;
 }
 
 .project {
@@ -102,4 +108,17 @@ main {
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
                       supported by Chrome, Edge, Opera and Firefox */
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    min-height: 2em;
+    margin-left: 1cm;
+    margin-bottom: 3mm;
+}
+
+footer > span {
+    margin-right: 1cm;
 }
